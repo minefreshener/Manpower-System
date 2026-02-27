@@ -36,7 +36,6 @@
                 "uniques": [
                     "Units in cities cost no Maintenance",
                     "[+50]% Strength for cities <with a garrison> <when attacking>",
-                    "[-100]% weight to this choice for AI decisions"
                 ],
                 "row": 1,
                 "column": 5
@@ -45,7 +44,8 @@
                 "name": "Landed Elite",
                 "uniques": [
                     "[+10]% growth [in capital]",
-                    "[+2 Food] [in capital]"
+                    "[+2 Food] [in capital]",
+                    "Provides [1] [Manpower]"
                 ],
                 "requires": ["Legalism"],
                 "row": 2,
@@ -96,7 +96,6 @@
                 "uniques": [
                     "Can build [all] improvements at a [+25]% rate",
                     "Free [Worker] appears",
-                    "[-100]% weight to this choice for AI decisions"
                 ],
                 "row": 1,
                 "column": 4
@@ -126,7 +125,6 @@
                 "uniques": [
                     "[+1 Happiness] [in all cities connected to capital]",
                     "[-5]% Unhappiness from [Population] [in all non-occupied cities]",
-                    "[-100]% weight to this choice for AI decisions"
                 ],
                 "requires": ["Citizenship"],
                 "row": 2,
@@ -186,7 +184,8 @@
             {
                 "name": "Military Caste",
                 "uniques": [
-                    "[+1 Happiness, +2 Culture] [in all cities with a garrison]"
+                    "[+1 Happiness, +2 Culture] [in all cities with a garrison]",
+                    "Provides [1] [Manpower]"
                 ],
                 "requires": ["Discipline"],
                 "row": 2,
@@ -195,6 +194,7 @@
             {
                 "name": "Professional Army",
                 "uniques": [
+                    "Provides [1] [Manpower]",
                     "[-33]% Gold cost of upgrading <for [Military] units>",
                     "[+1 Happiness] from every [Walls]",
                     "[+1 Happiness] from every [Castle]",
@@ -384,7 +384,7 @@
             },
             {
                 "name": "Merchant Navy",
-                "uniques": ["[+3 Production] [in all coastal cities]"],
+                "uniques": ["[+3 Production] [in all coastal cities]", "Provides [1] [Manpower]"],
                 "requires": ["Naval Tradition"],
                 "row": 2,
                 "column": 2
@@ -473,7 +473,7 @@
             },
             {
                 "name": "Scientific Revolution",
-                "uniques": ["Science gained from research agreements [+50]%", "[-100]% weight to this choice for AI decisions"],
+                "uniques": ["Science gained from research agreements [+50]%"],
                 "requires": ["Free Thought"],
                 "row": 3,
                 "column": 2
@@ -506,13 +506,13 @@
         "policies": [
             {
                 "name": "Constitution",
-                "uniques": ["[+2 Culture] from every [Wonder]", "[-100]% weight to this choice for AI decisions"],
+                "uniques": ["[+2 Culture] from every [Wonder]"],
                 "row": 1,
                 "column": 1
             },
             {
                 "name": "Universal Suffrage",
-                "uniques": ["[+33]% Strength for cities <when defending>", "[-100]% weight to this choice for AI decisions"],
+                "uniques": ["[+33]% Strength for cities <when defending>", "Provides [2] [Manpower]"],
                 "row": 1,
                 "column": 3
             },
@@ -570,13 +570,13 @@
         "policies": [
             {
                 "name": "Populism",
-                "uniques": ["[+25]% Strength <for [Wounded] units>", "[+100]% weight to this choice for AI decisions"],
+                "uniques": ["[+25]% Strength <for [Wounded] units>"],
                 "row": 1,
                 "column": 2
             },
             {
                 "name": "Militarism",
-                "uniques": ["[Gold] cost of purchasing [All] units [-33]%"],
+                "uniques": ["[Gold] cost of purchasing [All] units [-33]%", "Provides [2] [Manpower]"],
                 "row": 1,
                 "column": 4
             },
@@ -605,7 +605,7 @@
                 "name": "Total War",
                 "uniques": [
                     "[+25]% Production when constructing [Military] units [in all cities]",
-                    "New [Military] units start with [15] XP [in all cities]"
+                    "New [Military] units start with [15] XP [in all cities]", "Provides [1] [Manpower]"
                 ],
                 "requires": ["Police State", "Fascism"],
                 "row": 3,
@@ -640,7 +640,7 @@
             {
                 "name": "United Front",
                 "uniques": [
-                    "Militaristic City-States grant units [2] times as fast when you are at war with a common nation","[-100]% weight to this choice for AI decisions"
+                    "Militaristic City-States grant units [2] times as fast when you are at war with a common nation", "Provides [1] [Manpower]",
                 ],
                 "row": 1,
                 "column": 1
