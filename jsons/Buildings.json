@@ -1,25 +1,178 @@
 [
 	{
-		"name": "Holodeck",
-		"replaces": "Circus Maximus",
-		"uniqueTo": "Aliens",
-		"cost": 480,
-		"happiness": 12,
-		"culture": 12,
-		"science": 12,
-		"maintenance": 96,
+		"name": "Barracks",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["New [Military] units start with [15] XP [in this city]", "Destroyed when the city is captured", "Provides [1] [Manpower]"],
+		"requiredTech": "Bronze Working"
+	},
+	{
+		"name": "Krepost",
+		"replaces": "Barracks",
+		"uniqueTo": "Russia",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["[-25]% Culture cost of natural border growth [in this city]","[-25]% Gold cost of acquiring tiles [in this city]",
+			"New [Military] units start with [15] XP [in this city]", "Destroyed when the city is captured", "Provides [1] [Manpower]"],
+		"requiredTech": "Bronze Working"
+	},
+	{
+		"name": "Circus Maximus",
+		"cost": 125,
+		"happiness": 5,
+		"culture": 1,
 		"isNationalWonder": true,
-		"requiredBuildingInAllCities": "Colosseum",
+		"uniques": ["Only available <if [Colosseum] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city", "Provides [1] [Manpower]"],
 		"requiredTech": "Horseback Riding"
 	},
 	{
-		"name": "Breeders",
-		"replaces": "Aqueduct",
-		"uniqueTo": "Aliens",
-		"cost": 80,
-		"hurryCostModifier": 160,
+		"name": "Great Wall",
+		"culture": 3,
+		"greatPersonPoints": {"Great Engineer": 1},
+		"isWonder": true,
+		"uniques": ["Enemy [Land] units must spend [1] extra movement points when inside your territory <before discovering [Dynamite]> <Suppress warning [*contains a conditional on a unit movement unique*]>",
+			"Gain a free [Walls] [in this city]", "Provides [1] [Manpower]"],
+		"requiredTech": "Engineering",
+		"quote": "'The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.' - Sun Tzu"
+	},
+	{
+		"name": "Heroic Epic",
+		"cost": 125,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": ["Only available <if [Barracks] is constructed in all [non-[Puppeted]] cities>", "Provides [1] [Manpower]", 
+			"All newly-trained [Military] units [in this city] receive the [Morale] promotion", "Cost increases by [30] per owned city"],
+		"requiredTech": "Iron Working"
+	},
+	{
+		"name": "Machu Picchu",
+		"gold": 5,
+		"faith": 2,
+		"greatPersonPoints": {"Great Merchant": 1},
+		"isWonder": true,
+		"uniques": ["[+25]% [Gold] from Trade Routes", "Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles", "Provides [1] [Manpower]"],
+		"requiredTech": "Guilds",
+		"quote": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.' - Hiram Bingham"
+	},
+	{
+		"name": "Longhouse",
+		"replaces": "Workshop",
+		"uniqueTo": "Iroquois",
+		"cost": 100,
+		"maintenance": 2,
+		"production": 2,
+		"specialistSlots": {"Engineer": 1},
+		"hurryCostModifier": 25,
+		"uniques": ["[+1 Production] from [Forest] tiles [in this city]", "Provides [1] [Manpower]"],
+		"requiredTech": "Metal Casting"
+	},
+	{
+		"name": "Castle",
+		"cityStrength": 7,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Walls",
+		"requiredTech": "Chivalry",
+		"uniques": ["Destroyed when the city is captured", "Provides [1] [Manpower]"]
+	},
+	{
+		"name": "Mughal Fort",
+		"cost": 150,
+		"replaces": "Castle",
+		"uniqueTo": "India",
+		"cityStrength": 7,
+		"cityHealth": 25,
+		"culture": 2,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Walls",
+		"uniques": ["[+1 Gold] [in this city] <after discovering [Flight]>", "Destroyed when the city is captured", "Provides [1] [Manpower]"],
+		"requiredTech": "Chivalry"
+	},
+	{
+		"name": "Alhambra",
+		"culture": 1,
+		"greatPersonPoints": {"Great Artist": 1},
+		"isWonder": true,
+		"percentStatBonus": {"culture": 20},
+		"uniques": ["All newly-trained [relevant] units [in this city] receive the [Drill I] promotion",
+			"Gain a free [Castle] [in this city]", "Provides [1] [Manpower]"],
+		"requiredTech": "Chivalry",
+		"quote": "'Justice is an unassailable fortress, built on the brow of a mountain which cannot be overthrown by the violence of torrents, nor demolished by the force of armies.' - Joseph Addison"
+	},
+	{
+		"name": "Armory",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredBuilding": "Barracks",
+		"uniques": ["New [Military] units start with [15] XP [in this city]", "Destroyed when the city is captured", "Provides [1] [Manpower]"],
+		"requiredTech": "Steel"
+	},
+	{
+		"name": "Satrap's Court",
+		"replaces": "Bank",
+		"uniqueTo": "Persia",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
 		"happiness": 2,
-		"uniques": ["40% of food is carried over after a new citizen is born"],
-		"requiredTech": "Engineering"
-	}
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"gold": 25},
+		"requiredBuilding": "Market",
+		"uniques": ["Provides [1] [Manpower]"],
+		"requiredTech": "Banking"
+	},
+	{
+		"name": "Kremlin",
+		"culture": 3,
+		"cityStrength": 12,
+        "greatPersonPoints": {"Great Scientist": 1},
+		"isWonder": true,
+		"uniques": ["[+25]% City Strength from defensive buildings", "Provides [1] [Manpower]"],
+		"requiredTech": "Metallurgy",
+		"quote": "'The Kremlin is constantly changing the rules of the game to suit its purposes. We are not playing chess, we're playing roulette.' - Garry Kasparov"
+	},
+	{
+		"name": "Public School",
+		"science": 3,
+		"specialistSlots": {"Scientist": 1},
+		"requiredBuilding": "University",
+		"maintenance": 3,
+		"hurryCostModifier": 0,
+		"uniques": ["[+1 Science] per [2] population [in this city]", "Provides [1] [Manpower] <when above [-2] [Happiness]>"],
+		"requiredTech": "Scientific Theory"
+	},
+	{
+		"name": "Military Academy",
+		"hurryCostModifier": 0,
+		"maintenance": 1,
+		"requiredBuilding": "Armory",
+		"uniques": ["New [Military] units start with [15] XP [in this city]", "Provides [2] [Manpower]", "Destroyed when the city is captured"],
+		"requiredTech": "Military Science"
+	},
+	{
+        "name": "Police Station",
+        "cost": 300,
+        "maintenance": 1,
+        "hurryCostModifier": 10,
+        "uniques": ["Only available <when espionage is enabled>", "[-25]% enemy spy effectiveness [in this city]", "Consumes [1] [Manpower] <when below [-6] [Happiness]>"],
+        "requiredBuilding": "Constabulary",
+        "requiredTech": "Electricity"
+    },
+	{
+		"name": "Military Base",
+		"cityStrength": 12,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Arsenal",
+		"requiredTech": "Replaceable Parts",
+		"uniques": ["Destroyed when the city is captured", "Provides [1] [Manpower]"]
+	},
+	{
+		"name": "Pentagon",
+		"isWonder": true,
+		"culture": 3,
+		"greatPersonPoints": {"Great Engineer": 2},
+		"uniques": ["[-33]% Gold cost of upgrading <for [Military] units>", "Provides [2] [Manpower]"],
+		"requiredTech": "Combined Arms",
+		"quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower"
+	},
 ]
