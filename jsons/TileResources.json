@@ -1,1 +1,8 @@
-
+[
+  {
+		"name": "Manpower",
+		"resourceType": "Strategic",
+		"production": 1,
+		"uniques": [],
+	},
+]
