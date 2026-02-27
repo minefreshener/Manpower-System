@@ -7,8 +7,10 @@
 		"strength": 5,
 		"cost": 25,
 		"requiredTech": "Agriculture",
-		"obsoleteTech": "Scientific Theory",
-		"uniques": ["May upgrade to [Archer] through ruins-like effects"],
+		"obsoleteTech": "Radar",
+		"uniques": ["May upgrade to [Archer] through ruins-like effects", "[+1] Movement <after discovering [Horseback Riding]>", 
+			"[+100]% Strength <after discovering [Guilds]>", "[+33]% Strength <after discovering [Gunpowder]>", "[+50]% Strength <after discovering [Military Science]>",
+			"[+1] Sight <after discovering [Radio]>", "[+33]% Strength <after discovering [Replaceable Parts]>"],
 		"promotions": ["Ignore terrain cost"],
 		"attackSound": "nonmetalhit"
 	},
@@ -20,7 +22,8 @@
 		"cost": 40,
 		"requiredTech": "Agriculture",
 		"obsoleteTech": "Civil Service",
-		"uniques": ["Can upgrade to [Spearman]", "Can upgrade to [Swordsman]"],
+		"upgradesTo": "Pikeman",
+		"uniques": ["[+25]% Strength <after discovering [Bronze Working]>", "[+25]% Strength <after discovering [Iron Working]>"],
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
 			{"text": "This is your basic, club-swinging fighter."}
@@ -35,9 +38,11 @@
 		"strength": 10,
 		"cost": 40,
 		"requiredTech": "Agriculture",
-		"obsoleteTech": "Metal Casting",
+		"obsoleteTech": "Pharmaceuticals",
 		"promotions": ["Haka War Dance"],
-		"upgradesTo": "Swordsman",
+		"uniques": ["[+50]% Strength <after discovering [Iron Working]>", "[+33]% Strength <after discovering [Steel]>", 
+			"[+50]% Strength <after discovering [Gunpowder]>", "[+50]% Strength <after discovering [Rifling]>", "[+50]% Strength <after discovering [Replaceable Parts]>"],
+		"upgradesTo": "Marine",
 		"attackSound": "nonmetalhit"
 	},
 	{
@@ -46,12 +51,14 @@
 		"uniqueTo": "Aztecs",
 		"replaces": "Warrior",
 		"movement": 2,
-		"strength": 8,
+		"strength": 10,
 		"cost": 40,
 		"requiredTech": "Agriculture",
-		"obsoleteTech": "Metal Casting",
+		"obsoleteTech": "Replaceable Parts",
 		"promotions": ["[Jaguar] ability","Woodsman"],
-		"upgradesTo": "Swordsman",
+		"uniques": ["[+50]% Strength <after discovering [Iron Working]>", "[+50]% Strength <after discovering [Chivalry]>", 
+			"[+33]% Strength <after discovering [Gunpowder]>", "[+50]% Strength <after discovering [Rifling]>"],
+		"upgradesTo": "Great War Infantry",
 		"attackSound": "nonmetalhit"
 	},
 	{
