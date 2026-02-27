@@ -2,6 +2,28 @@
     {
         "name": "God of War",
         "type": "Pantheon",
-        "uniques": ["Earn [50]% of [Military] unit's [Strength] as [Faith] when killed within 4 tiles of a city following this religion"]
+        "uniques": ["Earn [50]% of [Military] unit's [Strength] as [Faith] when killed within 4 tiles of a city following this religion", "Provides [1] [Manpower]"]
+    },
+    {
+        "name": "Holy Warriors",
+        "type": "Follower",
+        "uniques": ["Provides [1] [Manpower]", "May buy [{Military} {Land}] units with [Faith] for [2] times their normal Production cost <in [in cities following this religion] cities>"]
+    },
+    {
+        "name": "Swords into Ploughshares",
+        "type": "Follower",
+        "uniques": ["[+15]% growth [in this city] <when not at war>", "Consumes [1] [Manpower] <when not at war>"]
+    },
+    {
+        "name": "Defender of the Faith",
+        "type": "Enhancer",
+        "uniques": ["[+20]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>", "Provides [1] [Manpower]"]
+        // ToDo: Should only be friendly territory of cities that follow this religion
+    },
+    {
+        "name": "Just War",
+        "type": "Enhancer",
+        "uniques": ["[+20]% Strength <for [All] units> <when fighting in [Enemy Land] tiles>", "Provides [1] [Manpower]"]
+        // ToDo: Should only be enemy territory of cities that follow this religion
     },
 ]
